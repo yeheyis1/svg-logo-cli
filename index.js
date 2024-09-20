@@ -20,8 +20,12 @@ inquirer.prompt(
     name: 'text',
     message: 'Enter up to three characters for your logo text:',
     validate: function (input) {
+       // Alphanumeric regex: only letters and numbers, no spaces or special characters
+       const alphanumericRegex = /^[a-zA-Z0-9]+$/;
       if (input.length > 3) {
         return 'Please enter up to three characters.';
+      } else if (!alphanumericRegex.test(input)) {
+        return 'please enter only alphamumeric characters (letters and numbers).';
       }
       return true;
     }

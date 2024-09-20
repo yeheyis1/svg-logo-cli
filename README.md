@@ -1,4 +1,20 @@
 # svg-logo-cli
+
+This is a Node.js command-line application that generates an SVG logo based on user input. The user is prompted to provide up to three characters of text, a text color, a shape (circle, square, triangle), and a shape color. The application generates an SVG file containing the specified text and shape.
+
+## Features
+- Prompts for text (up to three characters), text color, shape, and shape color.
+- Generates an SVG file based on the user's input.
+- Supports color keywords and hexadecimal color codes for text and shape.
+- Unit tests for shape rendering using Jest.
+
+## Walkthrough Video
+[Link to Walkthrough Video](https://drive.google.com/file/d/19wo3NccW1e0BXxN7aYrTWwC2lwykrE8E/view)
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone YOUR_REPO_URL
 ## Acceptance Criteria
 
 ```md
